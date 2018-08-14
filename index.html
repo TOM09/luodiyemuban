@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>艺点</title>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"> -->
+    <script>
+        //动态设置像素比
+        var pixelRatio = 1 / window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio +
+            ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + ',user-scalable=no" />');
+        //获取html节点
+        var html = document.getElementsByTagName("html")[0];
+        //获取屏幕宽度
+        var pageWidth = html.getBoundingClientRect().width;
+        //屏幕宽度/数值=结果
+        html.style.fontSize = pageWidth / 30 + "px";
+        console.log(pageWidth)
+    </script>
+    <!-- <script type="text/javascript">
+        //JS监听浏览器文字大小代码
+        "use strict";
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    console.log(clientWidth)
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = (clientWidth / 25) + 'px';
+                };
+    
+            if (!
+            doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script> -->
+
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/indexWeb.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link href="bootstrap-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="bootstrap-dist/js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/index.js"></script>
+
+</head>
+
+<body>
+    <div class="swiper-container webSwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <!-- v-for="item in imgData" -->
+                <!-- <img :src="item" /> -->
+                <img src="img/indexBanner1.png" class="bannerImg2" />
+            </div>
+            <div class="swiper-slide">
+                <img src="img/indexBanner2.jpg" class="bannerImg2" />
+            </div>
+            <div class="swiper-slide">
+                <img src="img/indexBanner3.jpg" class="bannerImg2" />
+            </div>
+            <div class="swiper-slide">
+                <img src="img/indexBanner4.jpg" class="bannerImg2" />
+            </div>
+            <div class="swiper-slide">
+                <img src="img/indexBanner5.jpg" class="bannerImg2" />
+            </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="active">
+            <div class="swiper-pagination active3"></div>
+        </div>
+    </div>
+    <!--大客户展示-->
+
+    <!-- <div class="relatedCase visitor">
+        <h1 class="caseTitle visitorList">
+          相关案例
+        </h1>
+  
+        <ul class="caseList">
+          <li class="relatedList visitorLi">2022冬奥会</li>
+          <li class="relatedList">三只松鼠</li>
+          <li class="relatedList">大足石刻</li>
+          <li class="relatedList">蒙自招商局</li>
+          <li class="relatedList">唐山旅游局</li>
+          <li class="relatedList">华龙网</li>
+          <li class="relatedList">双山岛</li>
+        </ul>
+      </div> -->
+
+
+    <div class="banner2">
+        <div class="b2_title">
+            <h1>服务内容</h1>
+        </div>
+        <div class="b2_con">
+            <div class="b2Con_box1">
+                <img src="img/pinpai1.png" class="b2conH3H5">
+                <!-- <div class="b2conH3H5">
+                         <h3>品牌战略规划</h3>
+                        <h5>品牌再进阶，爆发新价值</h5>
+                    </div> -->
+
+            </div>
+            <div class="b2Con_box1">
+                <img src="img/pinpai2.png" class="b2conH3H5">
+
+
+            </div>
+            <div class="b2Con_box1">
+                <img src="img/pinpai3.png" class="b2conH3H5">
+
+
+            </div>
+            <div class="b2Con_box1">
+                <img src="img/pinpai4.png" class="b2conH3H5">
+
+
+            </div>
+            <div class="b2Con_box1">
+                <img src="img/pinpai5.png" class="b2conH3H5">
+
+
+            </div>
+            <div class="b2Con_box1">
+                <img src="img/pinpai6.png" class="b2conH3H5">
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+
+
+    <div class="content">
+        <!-- 大客户案例展示 -->
+        <div class="box">
+            <h2 class="visitorList">
+                大客户案例展示
+            </h2>
+            <ul class="swiperTab">
+                <li class='relatedList'>
+                    <span>冬奥会</span>
+                </li>
+                <li class='relatedList'>
+                    <span>乌镇喜庆堂</span>
+                </li>
+                <li class='relatedList'>
+                    <span>蒙牛母婴旗舰店</span>
+                </li>
+                <li class='relatedList'>
+                    <span>三只松鼠</span>
+                </li>
+            </ul>
+            <div class="swiper-container2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide2 containerTouch">
+                        <img src="img/visitor1.jpg" alt="">
+                        <div class="imgContent">
+                            <h3>冬奥会</h3>
+                            <p>
+                                冬奥会 2022冬奥会申办成功，令每个中华儿女为之自豪，利用画册去传达冬奥的意义与精神无比重要。考虑到奥运会是全民关注的运动盛会，将画册的简洁性与易懂性作为设计的重点，用生动活泼的卡通形象与语言来描述各个比赛项目与礼仪知识，以此传达冬奥会的意义与精神，同时力求通过这种简单有效的表现形式给观众带来立体化的视觉感受，从而产生深刻的阅读印象。
+                            </p>
+                            <p>
+                                以成就国人梦想为主题，以“2022，让世界再一次铭记中国”为思路，在设计时一方面使用活泼明朗的色彩来给此次运动盛会增加全民参与的活力，另一方面尽可能地在作品中添加中国特色元素，这样不仅标明了盛会在中国举办，同时向全世界传播了中国的文化元素。
+                            </p>
+                            <span>更多案例</span>
+                            <div class="advice">
+                                立即咨询
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide2 containerTouch">
+                        <img src="img/visitor2.jpg" alt="">
+                        <div class="imgContent">
+                            <h3>冬奥会</h3>
+                            <p>
+                                冬奥会 2022冬奥会申办成功，令每个中华儿女为之自豪，利用画册去传达冬奥的意义与精神无比重要。考虑到奥运会是全民关注的运动盛会，将画册的简洁性与易懂性作为设计的重点，用生动活泼的卡通形象与语言来描述各个比赛项目与礼仪知识，以此传达冬奥会的意义与精神，同时力求通过这种简单有效的表现形式给观众带来立体化的视觉感受，从而产生深刻的阅读印象。
+                            </p>
+                            <p>
+                                以成就国人梦想为主题，以“2022，让世界再一次铭记中国”为思路，在设计时一方面使用活泼明朗的色彩来给此次运动盛会增加全民参与的活力，另一方面尽可能地在作品中添加中国特色元素，这样不仅标明了盛会在中国举办，同时向全世界传播了中国的文化元素。
+                            </p>
+                            <span>更多案例</span>
+                            <div class="advice">
+                                立即咨询
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide2 containerTouch">
+                        <img src="img/visitor3.jpg" alt="">
+                        <div class="imgContent">
+                            <h3>冬奥会</h3>
+                            <p>
+                                冬奥会 2022冬奥会申办成功，令每个中华儿女为之自豪，利用画册去传达冬奥的意义与精神无比重要。考虑到奥运会是全民关注的运动盛会，将画册的简洁性与易懂性作为设计的重点，用生动活泼的卡通形象与语言来描述各个比赛项目与礼仪知识，以此传达冬奥会的意义与精神，同时力求通过这种简单有效的表现形式给观众带来立体化的视觉感受，从而产生深刻的阅读印象。
+                            </p>
+                            <p>
+                                以成就国人梦想为主题，以“2022，让世界再一次铭记中国”为思路，在设计时一方面使用活泼明朗的色彩来给此次运动盛会增加全民参与的活力，另一方面尽可能地在作品中添加中国特色元素，这样不仅标明了盛会在中国举办，同时向全世界传播了中国的文化元素。
+                            </p>
+                            <span>更多案例</span>
+                            <div class="advice">
+                                立即咨询
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide2 containerTouch">
+                        <img src="img/visitor4.jpg" alt="">
+                        <div class="imgContent">
+                            <h3>冬奥会</h3>
+                            <p>
+                                冬奥会 2022冬奥会申办成功，令每个中华儿女为之自豪，利用画册去传达冬奥的意义与精神无比重要。考虑到奥运会是全民关注的运动盛会，将画册的简洁性与易懂性作为设计的重点，用生动活泼的卡通形象与语言来描述各个比赛项目与礼仪知识，以此传达冬奥会的意义与精神，同时力求通过这种简单有效的表现形式给观众带来立体化的视觉感受，从而产生深刻的阅读印象。
+                            </p>
+                            <p>
+                                以成就国人梦想为主题，以“2022，让世界再一次铭记中国”为思路，在设计时一方面使用活泼明朗的色彩来给此次运动盛会增加全民参与的活力，另一方面尽可能地在作品中添加中国特色元素，这样不仅标明了盛会在中国举办，同时向全世界传播了中国的文化元素。
+                            </p>
+                            <span>更多案例</span>
+                            <div class="advice">
+                                立即咨询
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 以下是艺点出品的精品案例 -->
+    <div class="masterCase">
+        <div class="relatedCase">
+            <h2 class="caseTitle">
+                以下是艺点出品的精品案例
+            </h2>
+
+            <ul class="caseList">
+                <li class="relatedList relatedListCase">
+                    <img src="img/masterCase.png" alt="">
+                </li>
+
+                <li class="relatedList relatedListCase">
+                    <img src="img/masterCase.png" alt="">
+                </li>
+                <li class="relatedList relatedListCase">
+                    <img src="img/masterCase.png" alt="">
+                </li>
+                <li class="relatedList relatedListCase">
+                    <img src="img/masterCase.png" alt="">
+                </li>
+                <li class="relatedList relatedListCase">
+                    <img src="img/masterCase.png" alt="">
+                </li>
+                <li class="relatedList relatedListCase">
+                    <img src="img/masterCase.png" alt="">
+                </li>
+                <li class="relatedList relatedListCase">
+                    <img src="img/masterCase.png" alt="">
+                </li>
+                <li class="relatedList relatedListCase">
+                    <img src="img/masterCase.png" alt="">
+                </li>
+                <li class="relatedList relatedListCase">
+                    <img src="img/masterCase.png" alt="">
+                </li>
+            </ul>
+            <div class="advice">
+                立即咨询
+            </div>
+        </div>
+    </div>
+
+    <!-- 旗舰级品牌服务团队 -->
+    <div class="team">
+        <h2>旗舰级品牌服务团队</h2>
+        <div class="swiper-container people">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/people1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/people2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/people3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/people4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/people5.png" alt="">
+                </div>
+            </div>
+            <div class="btnNext swiper-button-next">
+            </div>
+            <div class="swiper-button-prev btnPrev">
+            </div>
+        </div>
+
+        <div class="fuwuLiucheng">
+            <h2>服务流程</h2>
+            <ul class="fuwuList">
+                <li class="fuwuLi1">
+                    <img src="img/liucheng1.png" alt="">
+                </li>
+                <li class="right">
+                    <img src="img/right.png" alt="">
+                </li>
+                <li class="fuwuLi1">
+                    <img src="img/liucheng2.png" alt="">
+                </li>
+                <li class="right">
+                    <img src="img/right.png" alt="">
+                </li>
+                <li class="fuwuLi1">
+                    <img src="img/liucheng3.png" alt="">
+                </li>
+            </ul>
+            <div class="liuchengDown">
+                <div class="liuchengDownImg">
+                    <img src="img/down.png" alt="">
+
+                </div>
+            </div>
+            <ul class="fuwuList">
+                <li class="fuwuLi2">
+                    <img src="img/liucheng7.png" alt="">
+                </li>
+                <li class="left">
+                    <img src="img/left.png" alt="">
+                </li>
+                <li class="fuwuLi2">
+                    <img src="img/liucheng6.png" alt="">
+                </li>
+                <li class="left">
+                    <img src="img/left.png" alt="">
+                </li>
+                <li class="fuwuLi2">
+                    <img src="img/liucheng5.png" alt="">
+                </li>
+                <li class="left">
+                    <img src="img/left.png" alt="">
+                </li>
+                <li class="fuwuLi2">
+                    <img src="img/liucheng4.png" alt="">
+                </li>
+            </ul>
+        </div>
+
+
+
+        <!--平台实力-->
+        <div class="strength">
+            <div class="strength_con">
+                <div class="strength_tab">
+
+                    <!-- <ul class="swiperTab">
+                            <li class='relatedList'>
+                                <span>冬奥会</span>
+                            </li>
+                            <li class='relatedList'>
+                                <span>乌镇喜庆堂</span>
+                            </li>
+                            <li class='relatedList'>
+                                <span>蒙牛母婴旗舰店</span>
+                            </li>
+                            <li class='relatedList'>
+                                <span>三只松鼠</span>
+                            </li>
+                        </ul> -->
+
+                    <ul id="strengthUl">
+                        <li class="li_active2">新闻动态</li>
+                        <li>行业动态</li>
+                        <li>获奖情况</li>
+                    </ul>
+                </div>
+                <div class="strength_tab_con">
+                    <div class="strength_tab_con1 strength_tab_con1_active">
+                        <div class="strength_con1_left">
+                            <img src="img/video_play.png" class="md-trigger4" data-modal="modal-4" alt="宣传片" title="宣传片">
+                            <div class="strength_con1_right">
+                                <div class="strength_con1_tit">
+                                    <img src="img/news.png" alt="cctv" title="cctv">
+                                </div>
+
+                                <div class="strength_news">
+                                    <div class="strength_news_list">
+                                        <div class="strength_news_time">
+                                            <p>29</p>
+                                            <p>2017-04</p>
+                                        </div>
+                                        <div class="strength_news_title">
+                                            <a href="/article/20" target="_blank" title="艺点意创再登央视，为创意服务劳动者代言">艺点意创再登央视，为创意服务劳动者代言</a>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+
+                                    <div class="strength_news_list">
+                                        <div class="strength_news_time">
+                                            <p>09</p>
+                                            <p>2016-10</p>
+                                        </div>
+                                        <div class="strength_news_title">
+                                            <a href="/article/6" target="_blank" title="艺点成为宗申集团2017年唯一指定品牌创意服务商">艺点成为宗申集团2017年唯一指定品牌创意服务商</a>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+
+                                    <div class="strength_news_list">
+                                        <div class="strength_news_time">
+                                            <p>07</p>
+                                            <p>2015-12</p>
+                                        </div>
+                                        <div class="strength_news_title">
+                                            <a href="/article/19" target="_blank" title="艺点意创亮相中国教育电视台 讲述巩书凯创业之路">艺点意创亮相中国教育电视台 讲述巩书凯创业之路</a>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+
+                                    <div class="strength_news_list">
+                                        <div class="strength_news_time">
+                                            <p>07</p>
+                                            <p>2015-12</p>
+                                        </div>
+                                        <div class="strength_news_title">
+                                            <a href="/article/11" target="_blank" title="线上互联网品牌---艺点意创亮相新闻联播">线上互联网品牌---艺点意创亮相新闻联播</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+
+
+
+
+                    </div>
+
+                    <div class="strength_tab_con1">
+                        <div class="strength_con1_left">
+                            <img src="img/strength_news1.jpg" alt="行业动态" title="行业动态">
+                            <div class="strength_con1_right">
+                                <div class="strength_news">
+                                    <div class="strength_news_list">
+                                        <div class="strength_news_time">
+                                            <p>22</p>
+                                            <p>2016-11</p>
+                                        </div>
+                                        <div class="strength_news_title">
+                                            <a href="/article/4" target="_blank" title="创意改变生活，乐活建设城市">创意改变生活，乐活建设城市</a>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+
+                                    <div class="strength_news_list">
+                                        <div class="strength_news_time">
+                                            <p>25</p>
+                                            <p>2016-10</p>
+                                        </div>
+                                        <div class="strength_news_title">
+                                            <a href="/article/5" target="_blank" title="艺点意创牵手韩都衣舍，引领跨界合作新浪潮">艺点意创牵手韩都衣舍，引领跨界合作新浪潮</a>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="strength_tab_con1">
+                        <div class="strength_con2_left">
+                            <img src="img/zhanlue.png" alt="战略布局全国" title="战略布局全国" class="strengthImg">
+                            <img src="img/year.png" alt="战略布局全国" title="战略布局全国" class="strengthImg2">
+                            <div class="strength_con2_right">
+                                <div class="strength_news2">
+                                    <span class="strength_news_list2">
+                                        红点设计大奖
+                                    </span>
+
+                                    <span class="strength_news_list2">
+                                        创始人荣膺品牌中国年度人物
+                                    </span>
+
+                                    <span class="strength_news_list2">
+                                        猪八戒中国服务“金猪奖”
+                                    </span>
+
+                                    <span class="strength_news_list2">
+                                        艺点意创完成A轮8000万人民币融资
+                                    </span>
+
+                                    <span class="strength_news_list2">
+                                        寻找中国创客45强
+                                    </span>
+
+                                    <span class="strength_news_list2">
+                                        中广节斩获“中国广告长城奖”
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--弹窗视频-->
+        <!-- <div class="md-container md-effect-1" id="modal-4">
+
+            <div class="md-content">
+                <div class="close_video">
+                    <img src="img/close.png" class="img-responsive md-close" onclick="pause()" alt="宣传片" title="宣传片">
+                </div> -->
+        <div class="zhao2">
+                <div class="list">
+                        <img src="img/closed.png" class="closedBtn" >
+                    </div>
+                <video id="modal4_video" width="100%" controls="controls">
+                    <source src="http://video.vipyidian.com/ea80892b3b2249a7a1ef7a0a24bc7924/e23d8f3c503747feb4ca7ee42fb4e899-699a80a29a15c59c9d0868389f86cc3f.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+
+
+        <div class="md-overlay" onclick="pause()"></div>
+
+
+
+
+
+        <!-- 底部咨询web端口 -->
+        <div class="bottomWeb">
+            <a class="bottomImg2 md-trigger3 zhaoBtn" data-modal="modal-3">
+                <img src="img/telpone.png">
+            </a>
+            <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=3150786529&amp;site=qq&amp;menu=yes" class="bottomImg2" title="">
+                <img src="img/qq.png">
+            </a>
+            <a href="tel:17317168626" class="bottomImg2">
+                <img src="img/tel.png">
+            </a>
+        </div>
+
+
+
+
+        <!--表单弹窗-->
+        <div class="zhao">
+
+            <div id="tijiao" ">
+                <div  id="tanchuang1">
+                    <form id="form1">
+                        <div class="list">
+                            <img src="img/closed.png" class="closedBtn" >
+                        </div>
+
+
+                        <div class="form1_con">
+                            <div class="con_list">立即与艺点项目顾问通话</div>
+                            <hr>
+                            <div class="con_list1">400-688-1314</div>
+                            <div class="con_list2">您也可以在线咨询我们或预约资深顾问</div>
+                            <div class="con_list3">
+                                <input type="text" class="phone1" name="phone" placeholder="请输入您的电话号码">
+                                <input type="hidden" name="source" id="top_source" value="{{$ad}}">
+                                <input type="hidden" name="template_cate"  value="{{$template_cate_id}}"> 
+                                <input type="submit" class="sub1" value="预约顾问">
+                                <div class="clear"></div>
+                            </div>
+                            <div class="con_list4">
+                                <img src="img/form_suo.png">
+                            </div>
+                            <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=3150786529&amp;site=qq&amp;menu=yes " class="huadong_qq
+                " target="_blank " title=" ">
+                                <div class="con_list5">在线咨询</div>
+                            </a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+         </div>
+
+
+    </div>
+</body>
+
+</html>

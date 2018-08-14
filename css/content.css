@@ -1,0 +1,275 @@
+/* web端口*/
+
+@media screen and (max-width: 780px) {
+    /* 当宽度小于750px时,执行花括号中的内容 */
+    .bannerImg2 {
+        display: block;
+        width: 100%;
+    }
+    .webSwiper {
+        position: relative;
+    }
+
+    .active2 span:nth-child(1){
+        
+    }
+    .active {
+        position: absolute;
+        bottom: 0;
+        left: 46%;
+        text-align: center;
+        width: 100%;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+    }
+    .active2 span {
+        margin-right: 16px;
+    }
+    .bottomWeb {
+        box-sizing: border-box;
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 46px;
+        background: rgba(255, 255, 255, .8);
+        justify-content: space-between;
+    }
+    .bottomImg2 {
+        width: 30%;
+        height: 78%;
+    }
+    .bannerImg,
+    .bottomPc,
+    .caseBottom {
+        display: none;
+    }
+    #box {
+        width: 100%;
+        box-sizing: border-box;
+        -webkit-overflow-scrolling: touch;
+    }
+    .top {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+    .swiper-container {
+        width: 100%;
+        /* height: 517px； */
+    }
+    .bannerImg {
+        width: 100%;
+    }
+    .content {
+        padding: 0 20px;
+    }
+    .caseTitle {
+        font-weight: 900;
+        font-size: 18px;
+        margin-left: 20px;
+    }
+    .relatedCase {
+        box-sizing: border-box;
+        padding: 0 0.03% !important;
+        max-width: 100%;
+        margin-bottom: 46px;
+    }
+    .caseList {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 0;
+    }
+    .relatedList {
+        /* display: inline-block; */
+        width: 30%;
+        height: 20%;
+        border: 1px solid #bfbfbf;
+        border-radius: 4px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 44px;
+        color: #333333;
+        margin-left: 3%;
+        margin-bottom: 3%;
+        box-shadow: -1px 10px 10px #e0e0e0;
+    }
+}
+
+/* pc和web通用 */
+
+.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(190, 190, 190, 1);
+    background: rgba(255, 255, 255, 1) !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #d4151a !important;
+}
+
+.content {
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.customerName {
+    font-weight: 900;
+    color: #000000;
+    font-size: 16px;
+}
+
+.customerContent {
+    font-size: 16px;
+    color: #666666;
+}
+
+/* pc端 */
+
+@media screen and (min-width: 780px) {
+   
+    .bannerImg2,
+    .bottomWeb,
+    .bottom {
+        display: none;
+    }
+    #box {
+        /* text-align: center */
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    .top {
+        box-sizing: border-box;
+        max-width: 62.5%;
+        margin-top: 152px !important;
+        margin: 0 auto;
+    }
+    .swiper-container {
+        width: 100%;
+        /* height: 517px； */
+    }
+    .bannerImg {
+        width: 100%;
+    }
+    .swiper-slide {
+        vertical-align: middle;
+        text-align: center
+    }
+    .swiper-pagination {
+        width: 100%;
+        left: 45%;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+    .active {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 48px;
+        line-height: 48px;
+        text-align: center;
+    }
+    .swiper-pagination span {
+        margin-left: 16px;
+        background-color: #dc3336;
+    }
+    .caseTitle {
+        font-weight: 900;
+        font-size: 16px;
+        padding-bottom: 15px;
+    }
+    .relatedCase {
+        box-sizing: border-box;
+        max-width: 62.5%;
+        margin: 40px auto;
+    }
+    .caseList {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 0;
+    }
+    .relatedList {
+        /* display: inline-block; */
+        width: 166px;
+        height: 44px;
+        border: 1px solid #bfbfbf;
+        border-radius: 4px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 44px;
+        color: #7a7a7a;
+        margin: 0 42px 24px 0;
+    }
+    /* 
+ */
+    .relatedList:hover {
+        background-color: #d71518;
+        color: #ffffff;
+    }
+    .caseBottom {
+        display: block;
+        box-sizing: border-box;
+        max-width: 62.5%;
+        max-height: 84px;
+        margin: 60px auto 150px;
+        overflow: hidden;
+    }
+    .caseBottom2 {
+        max-width: 78%;
+        display: inline-block;
+    }
+    .bottomImg {
+        width: 100%;
+    }
+    .caseBottom3 {
+        display: inline-block;
+        float: right;
+        max-width: 22%;
+    }
+    .caseBottomImg {
+        width: 80%;
+    }
+
+    .bottomPc {
+        box-sizing: border-box;
+        display: flex;
+        position: relative;
+        position: fixed;
+        width: 100%;
+        max-width: 100%;
+        bottom: 0;
+        background: #ffffff;
+        border-top: 2px solid #fafafa
+    }
+    .bottomPcDiv{
+        width: 62.5%;
+        margin: 0 auto;
+    }
+    .bottomImgGirl{
+        width: 24%;
+        margin-right: 4.6%;
+    }
+    .zixun{
+        width: 24%;
+        margin-right: 8%;
+    }
+    .lijizixun{ 
+        width: 24%;
+        margin-right: 5%;
+    }
+    .closed{
+    }
+}
+
+.top2 {
+    margin: 0 !important;
+}

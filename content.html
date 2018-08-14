@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>案例详情</title>
+
+  <!-- Bootstrap -->
+  <link href="bootstrap-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/content.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/reset.css">
+
+
+  <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+  <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+  <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <!-- ie8（含）以下 -->
+  <!-- <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script> -->
+  <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+  <script src="js/jquery/jquery.min.js"></script>
+  <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+  <script src="bootstrap-dist/js/bootstrap.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+
+  <div id="box">
+
+    <!-- 顶部 -->
+    <div class="top">
+
+      <!--banner轮播图 -->
+      <div class="swiper-container webSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <!-- v-for="item in imgData" -->
+            <!-- <img :src="item" /> -->
+            <img src="img/banner1.png" class="bannerImg" />
+            <!-- <img src="img/webbanner1.png" class="bannerImg2" /> -->
+            <img src="img/banner1.png" class="bannerImg2" />
+
+          </div>
+          <div class="swiper-slide">
+            <img src="img/banner1.png" class="bannerImg" />
+            <img src="img/banner1.png" class="bannerImg2" />
+
+          </div>
+          <div class="swiper-slide">
+            <img src="img/banner1.png" class="bannerImg" />
+            <img src="img/banner1.png" class="bannerImg2" />
+          </div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="active">
+          <div class="swiper-pagination active2"></div>
+        </div>
+      </div>
+
+      <!-- 如果需要分页器 -->
+      <!-- <div class="active active2">
+        <div class="swiper-pagination"></div>
+      </div> -->
+
+      <!-- 客户内容 -->
+      <div class="content">
+        <p>
+          <span class="customerName">客户名称：</span>
+          <span class="customerContent">华夏航空股份有限公司</span>
+        </p>
+        <p>
+          <span class="customerName companyProprty">企业属性：</span>
+          <span class="customerContent">航空与航天</span>
+        </p>
+        <p>
+          <p class="customerName companySynopsis">企业简介：</p>
+          <span class="customerContent">华夏航空股份有限公司（China Express，简称：“华夏航空”），于2006年4月正式成立，同年9月即实现首航。中国第一家专门从事支线航空客货运输的航空公司。</span>
+        </p>
+        <p>
+          <p class="customerName companySynopsis">服务回顾：</p>
+          <span class="customerContent">艺点艺创作为华夏航空广告物料设计者，充分考虑到其行业属性和目标客户喜好，将新科技、新玩法注入创意之中，并将实用性，互动性融为一体，获得了市场良好反馈。</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- 相关案例 -->
+    <div class="relatedCase">
+      <h4 class="caseTitle">
+        相关案例
+      </h4>
+
+      <ul class="caseList">
+        <li class="relatedList">2022冬奥会</li>
+        <li class="relatedList">三只松鼠</li>
+        <li class="relatedList">大足石刻</li>
+        <li class="relatedList">蒙自招商局</li>
+        <li class="relatedList">唐山旅游局</li>
+        <li class="relatedList">华龙网</li>
+        <li class="relatedList">双山岛</li>
+      </ul>
+    </div>
+
+    <!-- 底部商标组图 -->
+    <div class="caseBottom">
+      <div class="caseBottom2">
+        <img src="img/bottom.png" class="bottomImg">
+      </div>
+      <div class="caseBottom3">
+        <img src="img/telpont.png" class="caseBottomImg">
+      </div>
+    </div>
+
+    <!-- 咨询web端口 -->
+    <div class="bottomWeb">
+      <img src="img/telpone.png" class="bottomImg2">
+      <img src="img/qq.png" class="bottomImg2">
+      <img src="img/tel.png" class="bottomImg2">
+    </div>
+
+    <!-- 咨询pc端 -->
+    <div class="bottomPc">
+      <div class="bottomPcDiv">
+        <img src="img/girl.png" class="bottomImgGirl">
+        <img src="img/zixun.png" class="zixun">
+        <img src="img/lijizixun.png" class="lijizixun">
+        <img src="img/closed.png" class="closed1">
+
+
+      </div>
+
+    </div>
+
+
+  </div>
+
+  <script>
+        var swiper = new Swiper('.swiper-container', {
+        spaceBetween: 30,
+        slidesPerView: 1,
+        loop: true,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            loop: true,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+
+  </script>
+</body>
+
+</html>
